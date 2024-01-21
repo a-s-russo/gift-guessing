@@ -36,7 +36,7 @@ By examining a few cases, generalisations can be made. The table below shows the
 More broadly then, for any number of gifts *n*:
 * There is only one way to tag *n* gifts correctly. (This corresponds to the sequence of numbers in the main diagonal of the table.)
 * There are no ways to tag *n* - 1 gifts correctly. (This corresponds to the sequence of numbers in the first diagonal above the main diagonal of the table.)
-* Correctly tagging *n* - 2 gifts corresponds to the (*n* - 1)<sup>th</sup> [triangular number](https://pages.github.com/](https://en.wikipedia.org/wiki/Triangular_number)https://en.wikipedia.org/wiki/Triangular_number), or (*k*<sup>2</sup> + *k*)/2 where *k* = *n* - 1.  (This corresponds to the sequence of numbers in the second diagonal above the main diagonal of the table.)
+* Correctly tagging *n* - 2 gifts corresponds to the (*n* - 1)<sup>th</sup> [triangular number](https://en.wikipedia.org/wiki/Triangular_number), or (*k*<sup>2</sup> + *k*)/2 where *k* = *n* - 1.  (This corresponds to the sequence of numbers in the second diagonal above the main diagonal of the table.)
 * Correctly tagging *n* - 3 gifts can be obtained via *k*(*k*<sup>2</sup> - 1)/3 where *k* = *n* - 1. (This corresponds to the sequence of numbers in the third diagonal above the main diagonal of the table.)
 
 As can be demonstrated for the *n* - 3 case, formulae for the sequences of numbers in any of the other diagonals could also theoretically be found via arithmetic progressions that fit polynomials to the number strings.
