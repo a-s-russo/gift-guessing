@@ -55,6 +55,8 @@ For other rows, similar derangements can be found. Instead of those with zero fi
 
 The case for correctly tagging 1 gift can simply be expressed as a function of a derangement (with zero fixed points). If $`g(n)`$ is the number of ways of obtaining 1 correctly tagged gift for $n$ gifts, then $`g(n) = n \times !(n-1)`$.
 
-The difference between the cases for tagging 0 correct and tagging 1 correct is the difference between $!n$ and $`g(n)`$. This is: $$(n-1) \times [!(n-1) + !(n-2)] - n \times !(n-1) = (n-1) \times !(n-2) - !(n-1)$$ By recursion and the fact that $`!0=1`$ and $`!1=0`$, the difference between $`!n`$ and $`g(n)`$ will be 1 when $n$ is even, and -1 when $n$ is odd, as shown in the table above.
+(To understand why, observe that for each choice of the correctly labelled gift, there are $n - 1$ remaining gifts and so there are $`!(n - 1)`$ arrangements for the incorrect labelling of them. There are $n$ choices for the correctly labelled gift, giving $`g(n) = n \times !(n-1)`$.)
+
+The difference between the cases for tagging 0 correct and tagging 1 correct then is the difference between $!n$ and $`g(n)`$. This is: $$(n-1) \times [!(n-1) + !(n-2)] - n \times !(n-1) = (n-1) \times !(n-2) - !(n-1)$$ By recursion and the fact that $`!0=1`$ and $`!1=0`$, the difference between $`!n`$ and $`g(n)`$ will be 1 when $n$ is even, and -1 when $n$ is odd, as shown in the table above.
 
 The article linked above also explains why the proportion of all permutations for these two cases converges to around $`1/e = 0.37`$ as the number of gifts increases, as shown in the graph above. Other cases also seem to converge as $n$ tends to infinity.
